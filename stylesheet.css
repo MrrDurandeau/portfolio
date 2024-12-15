@@ -1,0 +1,168 @@
+/*Polices*/
+@font-face {
+	font-family: Abel;
+	src: url('fonts/Abel-Regular.woff');
+}
+
+/*Général*/
+body {
+	font-family: Abel;
+	font-size: 150%;
+	background-color: #f1f1f1;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	max-width: 100%;
+}
+
+h1, h2, h3, h4, h5 {
+	color: #360028;
+}
+
+h2 {
+	text-align: center;
+}
+
+a {
+	color: #360028;
+}
+
+a:hover {
+	color : #9c267e;
+}
+
+#pfp {
+	border: 0.3em solid #c0c0c0;
+}
+
+/*Menu de navigation*/
+
+header {
+	background-color: #adadad;
+	margin: -0.5em;
+}
+
+nav a {
+	border: 2px solid #767676;
+	padding-top: 0.2em;
+	padding-bottom: 0.2em;
+	padding-left: 0.4em;
+	padding-right: 0.4em;
+	text-decoration: None;
+	background-color: #b6b6b6
+}
+
+nav a:hover {
+	background-color: #cccccc;
+}
+
+#navContainer {
+	display: grid;
+	grid-template-columns: repeat(10, 10%)
+}
+
+nav h1 {
+	grid-column: 1/2;
+	margin-left: 2em;
+}
+
+nav ul {
+	grid-column: 8/11;
+	margin-top: 1.5em;
+}
+
+nav li {
+	display: inline;
+	padding-right: 4em;
+}
+
+
+
+/*Positionnement du contenu principal*/
+/*Première section*/
+main li {
+	display: inline;
+	padding: 0.3em; 
+}
+
+#mainContainer {
+	display: grid;
+	grid-template-columns: 10% 30% 40% 20%;
+}
+
+#Image {
+	grid-column: 2/3;
+	margin-top: -11em;
+	margin-left: 7em;
+	text-align: center;
+}
+
+#Biographie {
+	grid-column: 3/4;
+	margin-left: -2em;
+	margin-top: 2em;
+}
+
+#Image h4 {
+	margin: 0.3em;
+}
+
+#CV {
+	margin-top: 0.3em;
+}
+
+#Icones {
+	margin-left: -1.7em;
+}
+
+/*Deuxième section*/
+
+#skillContainer {
+	margin-top: 3em;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+#skillContainer p {
+	width: 30em;
+}
+
+
+/*Footer*/
+footer { 
+	margin-top: auto;
+	background-color: #adadad;
+	padding: 0.7em;
+	margin-bottom: -0.4em;
+	margin-left: -0.5em;
+	margin-right: -0.6em;
+	font-size: 80%;
+}
+
+
+/*Seconde page*/
+
+#projectContainer {
+	display: flex;
+	justify-content: center;
+}
+
+#projectContainer a {
+	margin: 3em;
+	background-color: #d9d9d9;
+	padding-left: 0.3em;
+	padding-right: 0.3em;
+	padding-top: 0.3em;
+	padding-bottom: 0.7em;
+	box-shadow: 8px 8px 20px grey;
+	text-decoration: none;
+}
+
+#projectContainer a:hover {
+	transform: scale(1.1);
+}
+
+#projectContainer h5 {
+	text-align: center;
+	margin: 1em;
+}
